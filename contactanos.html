@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📢CONTÁCTANOS</title>
+    <link rel="stylesheet" href="./styles/style.css"> 
+</head>
+
+<body>
+    <header class="header"> 
+        <nav class="header_menu"> 
+        <a class="header_menu_link" href="index.html">👨‍💻INICIO </a>
+        <a class="header_menu_link" href="productos.html"> PRODUCTOS🎯 </a>
+        <a class="header_menu_link" href="contactanos.html">📢CONTÁCTANOS </a>
+    </nav>
+    </header>
+
+    <!--contacti -->
+     <section id="contacto">
+        <h2>Contacto</h2>
+            <div class="contact-container">
+
+            <form id="contact-form" action="https://formspree.io/f/xeojkgng"
+            method="POST">
+
+            <!-- Campos del formulario -->
+                <label for="nombre">Nombres Completos y Apellidos:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="pais">País:</label>
+                <input type="text" id="pais" name="pais" required>
+
+                <label for="telefono">Teléfono o Celular:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="asunto">Asunto:</label>
+                <textarea id="asunto" name="asunto" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+          
+            <p id="my-form-status"></p>
+
+
+             <!-- Integración del mapa usando iframe -->
+             <div id="map">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d124856.14126644141!2d-77.03675505989756!3d-12.060411109892895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x9105c8b617cc6f77%3A0x73ebc53cc2c363a3!2sJir%C3%B3n%20de%20la%20Uni%C3%B3n%2C%20Lima%2015001!3m2!1d-12.0497262!2d-77.0338858!4m5!1s0x9105c3ec2c29e1df%3A0xa9a14eed92331144!2sLima!3m2!1d-12.0779798!2d-76.8720961!5e0!3m2!1ses!2spe!4v1723163957852!5m2!1ses!2spe"                   
+></iframe>
+            </div>           
+        </div> 
+    </div>
+    </section>
+   
+  <!--COLOCACIÓN DE overlay-->
+  <div id="overlay" class="overlay">
+    <div class="overlay-content">
+        <p id="overlay-message">¡Gracias! Tu mensaje ha sido enviado.</p>
+        <button id="close-overlay">Cerrar</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+<footer class="footer">
+    <p>Desarrollado por Novytec</p>
+</footer>
+
+</body>
+</html>
